@@ -49,6 +49,6 @@ CREATE TABLE enrollments (
     enrollment_date DATE DEFAULT CURRENT_DATE,
     grade VARCHAR(5),
     FOREIGN KEY (student_id) REFERENCES students(student_id) ON DELETE CASCADE,
-    FOREIGN KEY (course_id) REFERENCES courses(course_id) ON DELETE CASCADE,
-    UNIQUE(student_id, course_id)
+    FOREIGN KEY (course_id) REFERENCES courses(course_id) ON DELETE CASCADE
+    --UNIQUE(student_id, course_id)
 );
