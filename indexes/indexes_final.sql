@@ -1,0 +1,1 @@
+CREATE INDEX idx_enrollments_course_id ON enrollments(course_id);
